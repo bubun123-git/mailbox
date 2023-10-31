@@ -1,6 +1,6 @@
 .sidebar {
   width: 150px; /* Reduce the width of the sidebar */
-  background-color: #debddf; /* Dark background color */
+  background-color: #f0e9f0; /* Dark background color */
   padding: 10px; /* Reduce padding for a smaller sidebar */
   display: flex;
   flex-direction: column;
