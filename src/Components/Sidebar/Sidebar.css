@@ -1,0 +1,35 @@
+.sidebar {
+  width: 150px; /* Reduce the width of the sidebar */
+  background-color: #debddf; /* Dark background color */
+  padding: 10px; /* Reduce padding for a smaller sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.compose__btn {
+  background-color: #181d23;
+  color: #fff;
+  padding: 8px 16px; /* Reduce button padding for a smaller button */
+  border: none;
+  border-radius: 20px; /* Reduce border radius for a smaller button */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Reduce top margin */
+  margin-bottom: 10px; /* Reduce bottom margin */
+  max-width: 120px; /* Reduce the max width */
+  cursor: pointer;
+}
+
+.compose__btn:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust the button to be centered within the sidebar */
+.sidebar .compose__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for other sidebar elements (if any) */
+.sidebar .sidebar-item {
+  /* Add styling for other sidebar items here */
+}

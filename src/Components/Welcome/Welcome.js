@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Welcome = () => {
     return (
         <div className='mailbox'>
-            <h1>Welcome to your mailbox</h1>
+            <Header/><br/>
+            <Sidebar/>
         </div>
     );
 };
