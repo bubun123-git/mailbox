@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import './Welcome.css';
 import EmailList from '../EmailList/EmailList';
+import Compose from '../Compose/Compose';
 
 
 
@@ -16,7 +17,7 @@ const Welcome = () => {
                 <Sidebar />
                 <EmailList/><br/>
             </div>
-            
+            <Compose/>
         </div>
     );
 };

@@ -10,7 +10,7 @@ function EmailList() {
     <div className='emailList'>
         <EmailListSetting/>
         <EmailType/>
-        <EmailBody/>
+        <EmailBody name='SwapnaSarit' subject='this is subject' message="this is message" />
     </div>
   )
 }

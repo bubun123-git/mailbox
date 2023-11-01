@@ -68,13 +68,46 @@
   /* Email Body */
   .emailbody {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid whitesmoke;
-    height: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
   }
   
   .emailbody__left {
     display: flex;
     align-items: center;
+  }
+  
+  .emailbody__left > * {
+    margin-right: 10px;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  }
+  
+  .emailbody__middle {
+    flex: 1; /* Take up remaining space */
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .emailbody__middle__msg p {
+    margin: 0;
+    max-width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  
+  .emailbody__middle__msg b {
+    font-weight: bold;
+  }
+  
+  .emailbody__right {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
   }
   
