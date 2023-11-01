@@ -10,7 +10,7 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <Button startIcon={<AddIcon />} className='compose__btn'>
-                Compose
+               <h3>Compose</h3> 
             </Button><br/>
             <SidebarOption Icon={InboxIcon} title="Inbox" number={1} />
             <SidebarOption Icon={SendIcon} title="Sent" number={1} />

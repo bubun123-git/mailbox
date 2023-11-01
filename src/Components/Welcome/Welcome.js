@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
+import './Welcome.css';
+import EmailList from '../EmailList/EmailList';
 
 
 
@@ -8,11 +10,13 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Welcome = () => {
     return (
-        <div className='mailbox'>
-            <Header/><br/>
+        <div>
+            <Header /><br />
             <div className='app__body'>
-            <Sidebar/>
+                <Sidebar />
+                <EmailList/><br/>
             </div>
+            
         </div>
     );
 };

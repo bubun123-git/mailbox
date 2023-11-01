@@ -1,0 +1,80 @@
+/* Email List */
+.emailList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Email List Setting */
+  .emailList__setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px;
+  }
+  
+  .emailList__setting svg {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .emailList__settingsRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .emailList__settingsLeft {
+    font-size: 13px;
+  }
+  
+  /* Email Type */
+  .emailtype {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Email Type Option */
+  .emailtype__option {
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.2s ease;
+  }
+  
+  .emailtype__option svg {
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+  }
+  
+  .emailtype__option p {
+    font-size: 15px;
+  }
+  
+  .emailtype__option:hover {
+    background-color: whitesmoke;
+    border-bottom: 3px solid blue; /* Add a highlight on hover */
+  }
+  
+  /* Email Body */
+  .emailbody {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    height: 40px;
+  }
+  
+  .emailbody__left {
+    display: flex;
+    align-items: center;
+  }
+  
