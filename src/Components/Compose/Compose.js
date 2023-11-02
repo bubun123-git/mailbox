@@ -50,8 +50,12 @@ function Compose() {
             message,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         });
+        setTo("");
+        setSubject("");
+        setMessage("");
 
         alert("Email sent successfully");
+        dispatch(closeSendMessage());
     };
 
     return (
