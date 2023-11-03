@@ -3,7 +3,7 @@ import './Login.css';
 import Welcome from '../Welcome/Welcome';
 
 import { useNavigate } from 'react-router-dom';
-
+import ForgotPassword from './ForgotPassword';
 
 import user_icon from '../../Assets/person.png';
 import email_icon from '../../Assets/email.png';
@@ -97,7 +97,7 @@ const Login = () => {
                     <div></div>
                 ) : (
                     <div className='forgot-password'>
-                        <h3>Forgot Password?</h3> <span>Click Here</span>
+                         <ForgotPassword/>
                     </div>
                 )}
 
