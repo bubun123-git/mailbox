@@ -6,8 +6,8 @@ import EmailList from '../EmailList/EmailList';
 import Compose from '../Compose/Compose';
 import { useSelector } from 'react-redux';
 import { selectSendMessageIsOpen } from '../Store/MailSlice';
-
-
+import EmailDetail from '../EmailList/EmailDetail'
+import { Route, Routes } from "react-router-dom";
 
 const Welcome = () => {
     const isMessageisOpen = useSelector(selectSendMessageIsOpen);
@@ -18,11 +18,12 @@ const Welcome = () => {
             <Header /><br />
             <div className='app__body'>
                 <Sidebar />
-                <EmailList /><br />
+                <Routes>
+                    <Route path="/" element={<EmailList />} />
+                    <Route path="/mailid" element={<EmailDetail />} />
+                </Routes>
             </div>
-
             {isMessageisOpen && <Compose />}
-
         </div>
     );
 };

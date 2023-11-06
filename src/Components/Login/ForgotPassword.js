@@ -33,22 +33,26 @@ function ForgotPassword() {
             });
     };
     return (
-        <section className="bg-gradient-to-b to-red-800 from-green-400 via-yellow-300 wd-full  max-w-xl rounded-6 shadow-md py-3 text-center text-white mx-auto my-5 rounded-4">
-            <h2 className=" flex text-2xl font-bold text-white mb-4 justify-center">Forgot Password</h2>
-            <div>
-                <label htmlFor="amount" className="block text-white font-semibold mb-1 mx-0">
-                    Enter the E-mail
-                </label>
+        <section className="bg-gradient-to-b from-green-400 to-red-800 via-yellow-300 w-full max-w-xl rounded-lg shadow-md py-6 text-center text-white mx-auto my-5">
+            <h2 className="text-3xl font-bold text-white mb-4">Forgot Password</h2>
+            <div className="w-full max-w-md mx-auto">
+            <label htmlFor="email" className="block text-black font-semibold mb-2">Enter your email</label>
                 <input
-                    type="text"
-                    id="amount"
+                    type="email"
+                    id="email"
                     ref={emailRef}
-                    className=" w-full max-w-md py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-purple-400"
+                    className="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-purple-400 bg-deep-blue-800 text-white"
                 />
             </div>
-            <button onClick={forgotPasswordHandler} className="bg-gradient-to-r flex mx-auto from-blue-800  to-blue-500   text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-purple-400 mt-3 hover:bg-red-500">Send Link</button>
-
+            <button
+                onClick={forgotPasswordHandler}
+                className="bg-gradient-to-r from-blue-800 to-blue-500 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-purple-400 mt-4 hover:bg-red-500"
+            >
+                Send Password Reset Link
+            </button>
         </section>
+
+
     )
 }
 
