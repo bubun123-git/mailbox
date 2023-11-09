@@ -6,8 +6,11 @@ import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { openMessage } from '../Store/MailSlice';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { deleteEmailAction } from '../Store/MailSlice';
 
-function EmailBody({ name, subject, message, time }) {
+
+function EmailBody({ name, subject, message, time, id}) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -16,12 +19,21 @@ function EmailBody({ name, subject, message, time }) {
     navigate('/mailid');
   };
 
+  const deletemail = (event) => {
+    event.stopPropagation();
+    console.log(id);
+    dispatch(deleteEmailAction(id)); 
+  };
+
+
   return (
     <div className='emailbody' onClick={setMail}>
       <div className='emailbody__left'>
         <CheckBoxOutlineBlankIcon />
         <StarBorderIcon />
         <LabelImportantIcon />
+        <button onClick={(event) => deletemail(event)}>{<DeleteIcon />}</button>
+
         <h4>{name}</h4>
       </div>
       <div className='emailbody__middle'>

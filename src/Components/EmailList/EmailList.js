@@ -28,6 +28,7 @@ function EmailList() {
       {emails.map(({ id, data }) => (
         <EmailBody
           key={id}
+          id = {id}
           name={data.to}
           subject={data.subject}
           message={data.message} 
