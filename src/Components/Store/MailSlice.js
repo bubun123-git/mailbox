@@ -21,9 +21,10 @@ export const mailSlice = createSlice({
         },
 
         deleteEmailAction: (state, action) => {
-            const id = action.payload;
-            state.emails = state.emails.filter(email => email.id !== id);
-          },
+            const idToDelete = action.payload; 
+            state.emails = state.emails.filter(email => email.id !== idToDelete);
+        },
+        
           
     },
 })

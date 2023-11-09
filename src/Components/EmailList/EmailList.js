@@ -21,6 +21,18 @@ function EmailList() {
     });
   }, []);
 
+  const deleteEmail = async (emailId) => {
+    try {
+      await db
+        .collection('emails')
+        .doc(emailId)
+        .delete()
+      console.log('Email deleted successfully')
+    } catch (error) {
+      console.error('Error deleting email:', error)
+    }
+  };
+
   return (
     <div className='emailList'>
       <EmailListSetting />
@@ -28,11 +40,12 @@ function EmailList() {
       {emails.map(({ id, data }) => (
         <EmailBody
           key={id}
-          id = {id}
+          id={id}
           name={data.to}
           subject={data.subject}
-          message={data.message} 
+          message={data.message}
           time={new Date(data.timestamp?.seconds * 1000).toLocaleTimeString()}
+          onDelete={deleteEmail}
         />
 
       ))}

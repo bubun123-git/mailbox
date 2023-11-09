@@ -10,7 +10,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { deleteEmailAction } from '../Store/MailSlice';
 
 
-function EmailBody({ name, subject, message, time, id}) {
+function EmailBody({ name, subject, message, time, id, onDelete}) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -22,7 +22,7 @@ function EmailBody({ name, subject, message, time, id}) {
   const deletemail = (event) => {
     event.stopPropagation();
     console.log(id);
-    dispatch(deleteEmailAction(id)); 
+    onDelete(id)
   };
 
 
