@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { openMessage } from '../Store/MailSlice';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { deleteEmailAction } from '../Store/MailSlice';
+
 
 
 function EmailBody({ name, subject, message, time, id, onDelete}) {
