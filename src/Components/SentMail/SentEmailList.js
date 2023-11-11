@@ -1,17 +1,15 @@
+// SentMail.js
 import React from 'react';
-import './SentEmailList.css';
-import EmailList from '../EmailList/EmailList';
+import EmailList from '../EmailList/EmailList'
+import '../SentMail/SentEmailList.css';
 
-
-function SentEmailList() {
-
-   
-
+function SentMail() {
     return (
-        <div className='sent-email-list'>
-            <EmailList />
-        </div>
+      <div>
+        <h2>Sent Mail</h2>
+        <EmailList />
+      </div>
     );
-}
+  }
 
-export default SentEmailList;
+export default SentMail;
