@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import './Welcome.css';
-import EmailList from '../EmailList/EmailList';
+
 import Compose from '../Compose/Compose';
 import { useSelector } from 'react-redux';
 import { selectSendMessageIsOpen } from '../Store/MailSlice';

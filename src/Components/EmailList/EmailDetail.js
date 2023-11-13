@@ -20,7 +20,7 @@ function EmailDetail() {
   const mail = useSelector(selectedMail);
 
   const handleEmailClick = () => {
-    navigate('/welcome');
+    navigate('/sent');
   };
 
   return (
